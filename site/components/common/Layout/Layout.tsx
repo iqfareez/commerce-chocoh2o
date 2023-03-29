@@ -17,6 +17,10 @@ import { MenuSidebarView } from '@components/common/UserNav'
 import type { Page } from '@commerce/types/page'
 import type { Category } from '@commerce/types/site'
 import type { Link as LinkProps } from '../UserNav/MenuSidebarView'
+// The following import prevents a Font Awesome icon server-side rendering bug, // where the icons flash from a very large icon down to a properly sized one: 
+import '@fortawesome/fontawesome-svg-core/styles.css'; // Prevent fontawesome from adding its CSS since we did it manually above: 
+import { config } from '@fortawesome/fontawesome-svg-core'; 
+config.autoAddCss = false; /* eslint-disable import/first */
 
 const Loading = () => (
   <div className="w-80 h-80 flex items-center text-center justify-center p-3">

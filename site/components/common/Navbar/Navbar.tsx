@@ -22,16 +22,11 @@ const Navbar: FC<NavbarProps> = ({ links }) => (
           <Link href="/" className={s.logo} aria-label="Logo">
             <Logo />
           </Link>
-          <nav className={s.navMenu}>
-            <Link href="/search" className={s.link}>
-              All
-            </Link>
-            {links?.map((l) => (
-              <Link href={l.href} key={l.href} className={s.link}>
-                {l.label}
-              </Link>
-            ))}
-          </nav>
+          {/*<nav className={s.navMenu}>*/}
+          {/*  <Link href="/search" className={s.link}>*/}
+          {/*    All*/}
+          {/*  </Link>*/}
+          {/*</nav>*/}
         </div>
         {process.env.COMMERCE_SEARCH_ENABLED && (
           <div className="justify-center flex-1 hidden lg:flex">

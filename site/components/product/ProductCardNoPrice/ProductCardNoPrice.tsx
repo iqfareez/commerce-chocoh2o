@@ -2,7 +2,7 @@ import { FC } from 'react'
 import cn from 'clsx'
 import Link from 'next/link'
 import type { Product } from '@commerce/types/product'
-import s from './ProductCard.module.css'
+import s from './ProductCardNoPrice.module.css'
 import Image, { ImageProps } from 'next/image'
 import WishlistButton from '@components/wishlist/WishlistButton'
 import usePrice from '@framework/product/use-price'
@@ -18,7 +18,7 @@ interface Props {
 
 const placeholderImg = '/product-img-placeholder.svg'
 
-const ProductCard: FC<Props> = ({
+const ProductCardNoPrice: FC<Props> = ({
   product,
   imgProps,
   className,
@@ -105,10 +105,6 @@ const ProductCard: FC<Props> = ({
               variant={product.variants[0] as any}
             />
           )}
-          <ProductTag
-            name={product.name}
-            price={`${price}`}
-          />
           <div className={s.imageContainer}>
             {product?.images && (
               <Image
@@ -128,4 +124,4 @@ const ProductCard: FC<Props> = ({
   )
 }
 
-export default ProductCard
+export default ProductCardNoPrice

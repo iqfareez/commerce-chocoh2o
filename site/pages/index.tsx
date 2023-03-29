@@ -4,6 +4,7 @@ import { ProductCard } from '@components/product'
 import { Grid, Marquee, Hero } from '@components/ui'
 // import HomeAllProductsGrid from '@components/common/HomeAllProductsGrid'
 import type { GetStaticPropsContext, InferGetStaticPropsType } from 'next'
+import ProductCardNoPrice from "@components/product/ProductCardNoPrice";
 
 export async function getStaticProps({
   preview,
@@ -38,10 +39,23 @@ export async function getStaticProps({
 export default function Home({
   products,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
+  console.log(products);
   return (
     <>
       <Grid variant="filled">
-        {products.slice(0, 3).map((product: any, i: number) => (
+        {products.slice(0, 1).map((product: any, i: number) => (
+          <ProductCardNoPrice
+            key={product.id}
+            product={product}
+            imgProps={{
+              alt: product.name,
+              width: i === 0 ? 1080 : 540,
+              height: i === 0 ? 1080 : 540,
+              priority: true,
+            }}
+          />
+        ))}
+        {products.slice(1, 3).map((product: any, i: number) => (
           <ProductCard
             key={product.id}
             product={product}
@@ -60,27 +74,10 @@ export default function Home({
         ))}
       </Marquee>
       <Hero
-        headline=" Dessert dragée halvah croissant."
-        description="Cupcake ipsum dolor sit amet lemon drops pastry cotton candy. Sweet carrot cake macaroon bonbon croissant fruitcake jujubes macaroon oat cake. Soufflé bonbon caramels jelly beans. Tiramisu sweet roll cheesecake pie carrot cake. "
+        headline=" Perfect dessert in Ramadhan"
+        description="Indulge in the deliciously moist chocolate cakes and stay hydrated with our mineral water this Ramadhan. The perfect combination to satisfy your sweet tooth and quench your thirst."
       />
-      <Grid layout="B" variant="filled">
-        {products.slice(0, 3).map((product: any, i: number) => (
-          <ProductCard
-            key={product.id}
-            product={product}
-            imgProps={{
-              alt: product.name,
-              width: i === 1 ? 1080 : 540,
-              height: i === 1 ? 1080 : 540,
-            }}
-          />
-        ))}
-      </Grid>
-      <Marquee>
-        {products.slice(3).map((product: any, i: number) => (
-          <ProductCard key={product.id} product={product} variant="slim" />
-        ))}
-      </Marquee>
+
       {/* <HomeAllProductsGrid
         newestProducts={products}
         categories={categories}
