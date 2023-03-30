@@ -29,7 +29,7 @@ const links = [
     url: '/about',
   },
   {
-    name: 'Our Customerrs',
+    name: 'Our Customers',
     url: '/customers',
   }
 ]
