@@ -16,7 +16,7 @@ const teamMembers = [
   {
     name: 'Muhammad Asyraf',
     position: 'Operation Manager',
-    image: '/assets/sample-person.jpg',
+    image: '/assets/acap.jpg',
   },
   {
     name: 'Muhammad Ikhwan',
