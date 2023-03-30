@@ -26,7 +26,7 @@ const teamMembers = [
   {
     name: 'Muhammad Najmi',
     position: 'Logistic & Human Resources',
-    image: '/assets/sample-person.jpg',
+    image: '/assets/najmi.jpg',
   },
   {
     name: 'Muhammad Fareez Iqmal',
