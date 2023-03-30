@@ -6,7 +6,7 @@ const teamMembers = [
   {
     name: 'Muhammad Faqiihuddin',
     position: 'CEO',
-    image: '/assets/sample-person.jpg',
+    image: '/assets/FAQIIH.png',
   },
   {
     name: 'Muhammad Khairul Anwar',
