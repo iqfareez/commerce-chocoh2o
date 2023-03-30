@@ -77,7 +77,7 @@ const ProductSidebar: FC<ProductSidebarProps> = ({ product, className }) => {
         {/*</div>*/}
         <div className={"w-fill flex p-3 pl-3 mb-8 hover:bg-gray-200 rounded-lg"}>
           <FontAwesomeIcon icon={faMotorcycle} size={"xl"} />
-          <span className={"ml-4"}>On Campus delivery available!</span>
+          <span className={"ml-4"}>On Campus delivery available! (+RM1)</span>
         </div>
         <div>
           {error && <ErrorMessage error={error} className="my-5" />}
