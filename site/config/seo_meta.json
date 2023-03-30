@@ -1,19 +1,19 @@
 {
-  "title": "ACME Storefront | Powered by Next.js Commerce",
-  "titleTemplate": "%s - ACME Storefront",
+  "title": "CHOCOH2O | Moist Chocolate & Mineral Water",
+  "titleTemplate": "%s - CHOCOH2O",
   "description": "Next.js Commerce - https://www.nextjs.org/commerce",
   "openGraph": {
-    "title": "ACME Storefront | Powered by Next.js Commerce",
-    "description": "Next.js Commerce - https://www.nextjs.org/commerce",
+    "title": "CHOCOH2O | Moist Chocolate & Mineral Water",
+    "description": "MANU PROJECT POM3",
     "type": "website",
-    "url": "https://nextjs.org/commerce",
-    "site_name": "Next.js Commerce",
+    "url": "https://chocoh2o-iium.vercel.app/",
+    "site_name": "CHOCOH2O Commerce",
     "images": [
       {
         "url": "/card.png",
         "width": "800",
         "height": "600",
-        "alt": "Next.js Commerce"
+        "alt": "ChocoH2O Commerce"
       }
     ]
   },
