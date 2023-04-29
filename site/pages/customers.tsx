@@ -4,9 +4,24 @@ import { Container, Text } from '@components/ui'
 
 const images = [
   '/assets/customers/IMG_8672.JPG',
-  '/assets/customers/IMG_8685.JPG',
-  '/assets/customers/IMG_8688.JPG',
   '/assets/customers/IMG_8679.JPG',
+  '/assets/customers/IMG_8685.JPG',
+  '/assets/customers/IMG20230407213125.jpg',
+  '/assets/customers/IMG20230407214949.jpg',
+  '/assets/customers/IMG20230407221029.jpg',
+  '/assets/customers/IMG20230407225328.jpg',
+  '/assets/customers/IMG_20230330_201526.jpg',
+  '/assets/customers/IMG_20230330_220548.jpg',
+  '/assets/customers/IMG_5113.jpg',
+  '/assets/customers/IMG_5115.jpg',
+  '/assets/customers/IMG_5117.jpg',
+  '/assets/customers/IMG_5120.jpg',
+  '/assets/customers/IMG_5123.jpg',
+  '/assets/customers/IMG_5124.jpg',
+  '/assets/customers/IMG_5133.jpg',
+  '/assets/customers/photo_2023-04-15_00-14-05.jpg',
+  '/assets/customers/photo_2023-04-15_00-14-06.jpg',
+  '/assets/customers/photo_2023-04-15_00-14-07.jpg',
 ];
 export default function About() {
   return (
