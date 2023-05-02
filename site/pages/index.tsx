@@ -74,8 +74,8 @@ export default function Home({
         ))}
       </Marquee>
       <Hero
-        headline=" Perfect dessert in Ramadhan"
-        description="Indulge in the deliciously moist chocolate cakes and stay hydrated with our mineral water this Ramadhan. The perfect combination to satisfy your sweet tooth and quench your thirst."
+        headline=" Perfect dessert at any occasion"
+        description="Indulge in our deliciously moist chocolate cakes and quench your thirst with our refreshing mineral water. It's the perfect combination to satisfy your sweet tooth and stay hydrated."
       />
 
       {/* <HomeAllProductsGrid
