@@ -90,6 +90,10 @@ const Footer: FC<Props> = ({ className, pages }) => {
           <div>
             <span>&copy; 2023 ChocoH2O. All rights reserved.</span>
           </div>
+            <div style={{textAlign: 'center'}}>
+              <i>Made for <strong>MANU 4211 Technology Entrepreneurship</strong> (Sem 2, 2022/2023). <a
+                href={"https://github.com/iqfareez/commerce-chocoh2o"}>Visit GitHub</a> </i>
+            </div>
         </div>
       </Container>
     </footer>
